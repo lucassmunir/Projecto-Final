@@ -2,13 +2,13 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
     transition: .2s linear;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "MuseoModerno", sans-serif;
 }
 
@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px rgb(0, 0, 0);
 }
 
 .logo-title {
@@ -132,7 +132,7 @@ header {
 
 .section-recipes h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .featured-recipes {
@@ -143,11 +143,16 @@ header {
     gap: 20px;
 }
 
+.featured-recipes a {
+    text-decoration: none;
+    color: #333;
+}
+
 .recipe-card {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    margin: 10px;
     padding: 20px;
     text-align: center;
     width: 300px;
@@ -155,6 +160,7 @@ header {
 
 .recipe-card img {
     border-radius: 10px;
+    border: solid 1px #00000083;
     max-width: 100%;
 }
 
@@ -167,14 +173,22 @@ header {
     color: #666;
 }
 
+.recipe-card:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    position: static;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
 }
-
-/* cambia el alto del header en la parte de postres */
 
 header.dulce {
      height: 200px;
