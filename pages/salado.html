@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de recetas saladas</title>
     <link rel="stylesheet" href="/styles/salado-main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
 
-    <header id="header">
+    <header id="top-head">
         <div class="logo-title">
-            <img src="/img/logo.png" alt="DailyCook Logo" class="logo">
-            <h1>Daily<span>Cook</span></h1>
+            <a href="/">
+                <h1>daily<span>cook</span></h1>
+            </a>
         </div>
         <nav class="main-nav">
             <ul>
@@ -25,59 +27,72 @@
     </header>
 
     <main>
-        <h2 class="title-gral">¡Las mejores recetas saladas!</h2>
+        <h2 class="title-gral">👨‍🍳¡Deleitate con estas recetas!👩‍🍳</h2>
 
         <section class="conteiners" id="conteiners">
 
             <div class="conteiner-recetas">
-                <img class="img-receta" src="../img/salado/milanesaconpure.png" alt="Milanesa con puré de papa">
-                <h4>Milanesa con puré de papa</h4>
-                <a href="#">¿Cómo se prepara?</a>
+                <a href="#">
+                    <img class="img-receta" src="../img/salado/milanesaconpure.png" alt="Milanesa con puré de papa">
+                    <h4>Milanesa con puré de papa</h4>
+                    <span class="stars">★★★★★</span>
+                </a>
             </div>
 
             <div class="conteiner-recetas">
                 <img class="img-receta" src="../img/salado/canelonesdecarne.png" alt="Canelones de Carne">
                 <h4>Canelones de Carne</h4>
-                <a href="#">¿Cómo se prepara?</a>
+                <span class="stars">★★★★☆</span>
             </div>
 
             <div class="conteiner-recetas">
                 <img class="img-receta" src="../img/salado/noquisdepapa.png" alt="Ñoquis de papa">
                 <h4>Ñoquis de papa</h4>
-                <a href="#">¿Cómo se prepara?</a>
+                <span class="stars">★★★★☆</span>
             </div>
 
             <div class="conteiner-recetas">
-                <img src="#" alt="Receta salada 4">
-                <h4>Receta salada 4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#">¿Cómo se prepara?</a>
+                <img class="img-receta" src="/img/salado/polloaldisco.jpg" alt="Pollo al disco">
+                <h4>Pollo al disco</h4>
+                <span class="stars">★★★★★</span>
             </div>
 
             <div class="conteiner-recetas">
-                <img src="#" alt="Receta salada 5">
-                <h4>Receta salada 5</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#">¿Cómo se prepara?</a>
+                <img class="img-receta" src="/img/salado/locro.png" alt="Locro">
+                <h4>Locro</h4>
+                <span class="stars">★★★★☆</span>
             </div>
 
             <div class="conteiner-recetas">
-                <img src="#" alt="Receta salada 6">
-                <h4>Receta salada 6</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#">¿Cómo se prepara?</a>
+                <img class="img-receta" src="/img/salado/empanadas.jpg" alt="Empanadas criollas">
+                <h4>Empanadas criollas</h4>
+                <span class="stars">★★★★★</span>
             </div>
 
         </section>
-        <div class="circle-home">
-            <a href="#header">&#8679;</a>
-        </div>
+        <a href="#top-head" class="arrow-up circle-home">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </a>
+
+        <p><i>Próximamente más recetas...</i></p>
+        <p>🍴 Click en cualquier receta para ver su preparación 🍝</p>
     </main>
 
     <footer>
         <p>&copy; 2024 DailyCook. All rights reserved.</p>
     </footer>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            const btn = document.querySelector('.circle-home');
+            if (window.innerWidth <= 768 &&
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 
 </html>
