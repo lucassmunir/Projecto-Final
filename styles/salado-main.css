@@ -224,13 +224,70 @@ footer {
     footer {
         font-size: 12px;
     }
+    /* sub page */
+    .pasoapaso {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .img-receta-subpage {
+        display: block;
+        margin: 0 auto;
+        width: 90vw;
+        max-width: 350px;
+        height: auto;
+    }
+    .ingredientes {
+        width: 90vw;
+        min-width: 350px;
+        margin: 0 auto;
+    }
+    .ingredientes-div {
+        display: flex !important;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        padding: 20px;
+    }
+    .ingredientes-div ul {
+        width: 100%;
+        margin: 0;
+    }
+    .ingredientes-div ul li {
+        text-align: start;
+    }
+    .steptostep {
+        width: 90vw;
+        max-width: 450px;
+        min-width: 300px;
+        margin: auto;
+    }
+    .conteiner-steptostep {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .conteiner-steptostep p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .video-conteiner {
+        width: 90vw;
+        height: calc(90vw * 0.56);
+        max-width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    .rebard {
+        font-size: 16px;
+    }
 }
 
 /* sub page */
 .pasoapaso {
     display: flex;
-    flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     margin: 20px;
@@ -254,9 +311,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 4px solid black;
+    border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 2px 4px #333;
+    background-color: #fff;
 }
 
 .ingredientes h4 {
@@ -277,10 +335,50 @@ footer {
 
 .ingredientes-div ul span {
     font-weight: 800;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .ingredientes-div ul li {
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 300;
+}
+
+.steptopstep {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.conteiner-steptostep {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #333;
+    background-color: #fff;
+}
+
+.video-conteiner {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+}
+
+.rebard {
+    display: flex;
+    text-align: center;
+    margin: 0 20px;
+}
+
+legend {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
 }
