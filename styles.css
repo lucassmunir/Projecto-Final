@@ -110,6 +110,7 @@ header {
     text-align: center;
 }
 
+
 .hero-content {
     box-sizing: border-box;
     display: flex;
@@ -202,23 +203,64 @@ header {
     font-size: 1.2em;
     padding: 10px 20px;
     background-color: #f0a500;
-    border-radius: 5px; /* opcional, se ve más estético */
+    border-radius: 5px;
 }
 
-.section-recipes {
+.sponsors-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    color: #f0a500;
     background-color: #e4e4e4;
+    gap: 20px;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sponsor-logos a img {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sponsors-section h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+.sponsor-logos a img:hover {
+    transform: scale(1.1);
+}
+
+
+.section-recipes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://img.hellofresh.com/w_3840,q_auto,f_auto,c_fill,fl_lossy/hellofresh_s3/image/HF_Y24_R16_W42_ES_ESSGP30616-2_Main__edit_meat_high-a670615d.jpg");
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
     padding: 20px 20px;
     text-align: center;
     height: auto;
 }
 
 .section-recipes h2 {
-    color:#ffffff;
-    background-color: #f0a500;
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 2.2em;
-    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    color: #ffffff;
 }
 
 .featured-recipes {
@@ -235,7 +277,8 @@ header {
 }
 
 .recipe-card {
-    background: #fff;
+    background-color: #ebdcc7;
+    color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     margin: 10px;
@@ -251,12 +294,19 @@ header {
 }
 
 .recipe-card h3 {
-    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 1.9em;
     margin: 10px 0;
+    color: #333;
 }
 
 .recipe-card p {
-    color: #666;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0;
 }
 
 .recipe-card:hover {
@@ -272,42 +322,3 @@ footer {
     position: relative;
 }
 
-/* header.dulce {
-     height: 200px;
-}
-
-
-
-.recetas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /*dos columnas iguales
-    gap:20px;
-    padding: 20px;
-}
-article.recipe {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 10px
-    }
-
-.recipe img {
-    width: 300px;
-    margin-top: 30px;
-    margin-left: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-.recipe h2 {
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-
-.recipe p {
-    font-size: 20px;
-    color: #555;
-    margin-right: 3px;
-}
-
-*/
