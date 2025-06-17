@@ -192,6 +192,10 @@ header {
     font-size: 1.2em;
 }
 
+.search-bar button:hover {
+    background-color: #d88b00;
+}
+
 .search-bar i{
     color:#ffffff;
     width: auto;
@@ -278,7 +282,6 @@ header {
 
 .recipe-card {
     background-color: #ebdcc7;
-    color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(0, 0, 0);
     margin: 10px;
@@ -289,7 +292,7 @@ header {
 
 .recipe-card img {
     border-radius: 10px;
-    border: solid 1px #00000083;
+    border: solid 2px #000000ad;
     max-width: 100%;
 }
 
@@ -298,14 +301,14 @@ header {
     font-style: italic;
     font-size: 1.9em;
     margin: 10px 0;
-    color: #333;
+    color: #1b1b1b;
 }
 
 .recipe-card p {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1em;
     font-weight: 700;
-    color: #333;
+    color: #1b1b1b;
     margin: 10px 0;
 }
 
@@ -315,8 +318,9 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    color: #000000;
     text-align: center;
     padding: 5px;
     position: relative;
