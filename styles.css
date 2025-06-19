@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
-    transition: .2s linear;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: "MuseoModerno", sans-serif;
 }
 
 header {
+    position: fixed;
+    width: 100%;
     background-color: #333;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px rgb(0, 0, 0);
+    z-index: 1000;
 }
 
 .logo-title {
@@ -27,6 +35,11 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.logo-title h1, .logo-title span {
+    font-family: "MuseoModerno", sans-serif;
+    color: #fff;
 }
 
 .logo-title h1 {
@@ -46,24 +59,14 @@ header {
     margin-bottom: 4px;
 }
 
-.search-bar {
+.main-nav {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 130px;
 }
 
-.search-bar i{
-    color:#ffffff;
-    width: auto;
-    font-size: 1.5em;
-    margin-top: 4px;
-}
-
-.search-bar input {
-    padding: 10px;
-    border: none;
-    border-radius: 30px
-}
 
 .main-nav ul {
     list-style: none;
@@ -84,70 +87,204 @@ header {
 
 .main-nav a:hover {
     color: #f0a500;
+    border-bottom: 2px solid #f0a500;
+}
+
+.search-icon i {
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-icon i:hover {
+    color: #f0a500;
 }
 
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-color: #e4e4e4;
     background-size: cover;
     background-position: center;
-    height: 570px;
+    height: 100vh;
     color: #fff;
     text-align: center;
 }
 
+
 .hero-content {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 70%;
+    width: 100%;
+    max-width: 1300px;
+    height: 70vh;
     padding: 20px;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2); 
+    margin: auto;
+    border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/28576166/pexels-photo-28576166/free-photo-of-disposicion-plana-de-los-ingredientes-para-la-elaboracion-de-pasta.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .hero-content h2 {
-    font-size: 3.5em;
+    font-size: 5.5em;
+    font-weight: 700;
     margin-bottom: 10px;
+    padding: 0;
+    margin-top: 50px;
 }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.hero-content h2 span {
+    color: #f0a500;
 }
+
+.hero-content .subtitulo {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #fff;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-bar input {
+    font-size: large;
+    padding: 20px;
+    padding-right: 35px;
+    border: 0;
+    width: 600px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar input:focus {
+    border: 2px solid #f0a500;
+    box-shadow: 0 0 5px rgba(240, 165, 0, 0.5);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #f0a500;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.search-bar button:hover {
+    background-color: #d88b00;
+}
+
+.search-bar i{
+    color:#ffffff;
+    width: auto;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+.hero-content .subtitulo-2 {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border-radius: 5px;
+}
+
+.sponsors-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 10px;
+    text-align: center;
+    color: #f0a500;
+    background-color: #e4e4e4;
+    gap: 20px;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sponsor-logos a img {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.sponsors-section h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: black;
+}
+.sponsor-logos a img:hover {
+    transform: scale(1.1);
+}
+
 
 .section-recipes {
-    background-color: #e4e4e4;
-    padding: 50px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://img.hellofresh.com/w_3840,q_auto,f_auto,c_fill,fl_lossy/hellofresh_s3/image/HF_Y24_R16_W42_ES_ESSGP30616-2_Main__edit_meat_high-a670615d.jpg");
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px;
     text-align: center;
+    height: auto;
 }
 
 .section-recipes h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    color: #ffffff;
 }
 
 .featured-recipes {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 10px 20px;
     gap: 20px;
 }
 
+.featured-recipes a {
+    text-decoration: none;
+    color: #333;
+}
+
 .recipe-card {
-    background: #fff;
+    background-color: #ebdcc7;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);
+    margin: 10px;
     padding: 20px;
     text-align: center;
     width: 300px;
@@ -155,22 +292,37 @@ header {
 
 .recipe-card img {
     border-radius: 10px;
+    border: solid 2px #000000ad;
     max-width: 100%;
 }
 
 .recipe-card h3 {
-    font-size: 1.5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: italic;
+    font-size: 1.9em;
     margin: 10px 0;
+    color: #1b1b1b;
 }
 
 .recipe-card p {
-    color: #666;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #1b1b1b;
+    margin: 10px 0;
+}
+
+.recipe-card:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    color: #000000;
     text-align: center;
+    padding: 5px;
+    position: relative;
 }
 

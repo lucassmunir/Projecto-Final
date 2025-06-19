@@ -7,53 +7,81 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
         <div class="logo-title">
-            <img src="/img/logo.png" alt="DailyCook Logo" class="logo">
-            <h1>Daily<span>Cook</span></h1>
+            <a href="/index.html"><h1>daily<span>cook</span></h1>
+            </a>
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/contacto.html">Contacto</a></li>
                 <li><a href="#recetas">Recetas</a></li>
             </ul>
         </nav>
+        <div class="search-icon">
+            <i class="bi bi-search"></i>
+        </div>
     </header>
     <section class="hero">
         <div class="hero-content">
-            <h2>Bienvenido a <br> DailyCook</h2>
-            <p>¡Tu fuente diaria de deliciosas recetas!</p>
+            <h2>daily<span>cook</span></h2>
+            <p class="subtitulo">Ya decidiste que comer?</p>
             <div class="search-bar">
-            <i class="bi bi-search"></i>
-            <input type="search" placeholder="Busca tus recetas">
+                <input type="search" placeholder="Busca tus recetas">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+            <p class="subtitulo-2">¡Tu fuente diaria de deliciosas recetas!</p>
         </div>
+        <div class="sponsors-section">
+            <h2 class="sponsors-title">Nuestros Patrocinadores</h2>
+            <div class="sponsor-logos">
+                <a href="https://www.sponsor1.com" target="_blank">
+                    <img src="https://freepnglogo.com/images/all_img/coca-cola-logo-3349.png" alt="Sponsor 1 Logo">
+                </a>
+                <a href="https://www.sponsor2.com" target="_blank">
+                    <img src="https://i2.wp.com/www.cdmensajero.es/wp-content/uploads/2019/08/Adidas-logo-e1566462201800.png?fit=1500%2C844&ssl=1" alt="Sponsor 2 Logo">
+                </a>
+                <a href="https://www.sponsor3.com" target="_blank">
+                    <img src="https://img.fcbayern.com/image/upload/cms/public/images/fcbayern-com/statischeshtml/partner/konami_new.png" alt="Sponsor 3 Logo">
+                </a>
+                <a href="https://www.sponsor4.com" target="_blank">
+                    <img src="https://sustainablebrandsmadrid.com/sb17/wp-content/uploads/2017/03/Samsung-logo.png" alt="Sponsor 4 Logo">
+                </a>
+            </div>
         </div>
     </section>
 
     <section id="recetas" class="section-recipes">
-        <h2>Recetas Destacadas</h2>
+        <h2 class="recetas-titulo">Elige que recetas quieres</h2>
         <div class="featured-recipes">
-            <div class="recipe-card">
-                <img src="/img/recipe1.jpg" alt="Receta 1">
-                <h3>Recetas Saludables</h3>
-                <p>Hay que comer sano en la vida che</p>
-            </div>
-            <div class="recipe-card">
-                <img src="/img/recipe2.jpg" alt="Receta 2">
-                <h3>Recetas Dulces</h3>
-                <p>Para cosas dulces ya estas vos rey</p>
-            </div>
-            <div class="recipe-card">
-                <img src="/img/recipe3.jpg" alt="Receta 3">
-                <h3>Recetas Saladas</h3>
-                <p>La sal hace mal para el corazón capo</p>
-            </div>
+            <a href="#">
+                <div class="recipe-card">
+                    <img src="/img/recipe1.jpg" alt="Receta 1">
+                    <h3>Recetas Saludables</h3>
+                    <p>Hay que comer sano en la vida</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="recipe-card">
+                    <img src="/img/recipe2.jpg" alt="Receta 2">
+                    <h3>Recetas Dulces</h3>
+                    <p>Para cosas dulces ya estas vos</p>
+                </div>
+            </a>
+            <a href="/pages/salado.html">
+                <div class="recipe-card">
+                    <img src="/img/recipe3.jpg" alt="Receta 3">
+                    <h3>Recetas Saladas</h3>
+                    <p>Para cosas saladas ya estas vos</p>
+                </div>
+            </a>
         </div>
-
+    </section>
     <footer>
-        <p>&copy; 2024 DailyCook. All rights reserved.</p>
+        <p>&copy; 2025 DailyCook. All rights reserved.</p>
     </footer>
 </body>
 </html>
