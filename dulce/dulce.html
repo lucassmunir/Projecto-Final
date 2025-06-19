@@ -7,44 +7,37 @@
     <link rel="stylesheet" href="/dulce.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="/img/logo2.png" alt="">
-            <h1>dailycook</h1>
+
+    <header>
+        <div class="logo-title">
+            <img src="/img/logo.png" alt="DailyCook Logo" class="logo">
+            <h1>Daily<span>Cook</span></h1> 
         </div>
-        <div class="navlinks">
+        <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Recetas</a></li>
+                <li><a href="#recetas">Recetas</a></li>
             </ul>
-        </div>
-        <div class="navlinks">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="dulce">
-        <h1>Dulces</h1>
-        <div class="search">
-            <input type="search" placeholder="Buscar recetas...">
-        </div>
+        </nav>
     </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="title-gral">Recetas <br> Dulces</h2>
+            <p> Descubre una variedad de recetas dulces para satisfacer tu antojo.</p>
+            <div class="search-bar">
+                <i class="bi bi-search"></i>
+                <input type="search" placeholder="Busca tus recetas">
+            </div>
+        </div>
+    </section>
 
     <main>
-        <section class="recetas">
+        <section id="recetas" class="section-recipes">
+           
             <article class="recipe">
-                <a href= "/dulce-de-leche.html" ><img src="/img/dulce-de-leche.jpg" alt="Dulce de leche"></a>
-                <div>
-                    <h2>Dulce de leche</h2>
-                    <p>Un clásico argentino, ideal para untar en tostadas o disfrutar con postres.</p>
-                </div>
-            </article>
-            <article class="recipe">
-                <a href= "/chocotorta.html"><img src="/img/chocotorta.jpg" alt="Chocotorta"></a>
+                <a href= "chocotorta.html"><img src="/img/chocotorta.jpg" alt="Chocotorta"></a>
                 <div>
                     <h2>Chocotorta</h2>
                     <p>Postre frío hecho con galletas de chocolate y dulce de leche, perfecto para cualquier ocasión.</p>
@@ -58,7 +51,7 @@
                 </div>
             </article>
             <article class="recipe">
-                <img src="/img/cheesecake.jpg" alt="Cheesecake">
+                <a href="cheesecake.html"><img src="/img/cheesecake.jpg" alt="Cheesecake"></a>
                 <div>
                     <h2>Cheesecake</h2>
                     <p>Un postre cremoso y suave, con una base de galleta y un topping de frutas frescas.</p>
@@ -76,6 +69,13 @@
                 <div>
                     <h2>Selva Negra</h2>
                     <p>Un delicioso pastel de chocolate con cerezas y crema, ideal para los amantes del chocolate.</p>
+                </div>
+            </article>
+             <article class="recipe">
+                <img src="/img/dulce-de-leche.jpg" alt="Dulce de leche">
+                <div>
+                    <h2>Dulce de leche</h2>
+                    <p>Un clásico argentino, ideal para untar en tostadas o disfrutar con postres.</p>
                 </div>
             </article>
         </section>

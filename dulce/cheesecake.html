@@ -7,40 +7,35 @@
     <link rel="stylesheet" href="/dulce.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="/img/logo2.png" alt="">
-            <h1>dailycook</h1>
+
+   <header>
+        <div class="logo-title">
+            <img src="/img/logo.png" alt="DailyCook Logo" class="logo">
+            <h1>Daily<span>Cook</span></h1>
         </div>
-        <div class="navlinks">
+        <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Contacto</a></li>
-                <li><a href="#">Recetas</a></li>
+                <li><a href="#recetas">Recetas</a></li>
             </ul>
-        </div>
-        <div class="navlinks">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="receta-header">
-        <h1>Cheesecake</h1>
-        <img src="/img/cheesecake.jpg" alt="Cheesecake" class="img-postre">
+        </nav>
     </header>
+
+    <section class="receta-titulo">
+        <img src="/img/cheesecake.jpg" alt="Cheesecake" class="img-postre">
+        <h1>Cheesecake</h1>
+    </section>
 
     <main>
         <section class="receta">
-            <h2>Ingredientes</h2>
-            <h3>Para la base:</h3>
+            <h2 class="ingredientes">Ingredientes</h2>
+            <h3><b>Para la base:</b></h3>
             <ul>
                 <li>300g de galletas de vainilla</li>
                 <li>120g de manteca derretida</li>
             </ul>
-            <h3>Para el relleno:</h3>
+            <h3><b>Para el relleno:</b></h3>
             <ul>
                 <li>300g de queso crema</li>
                 <li>250ml de crema de leche</li>
@@ -52,14 +47,14 @@
                 <li>Mermelada de frutas (opcional, para decorar)</li>
             </ul>
 
-            <h2>Preparación</h2>
-            <h3> Para la base</h3>
+            <h2 class="pasos">Preparación</h2>
+            <h3><b>Para la base</b></h3>
             <ol>
                 <li>Triturar las galletas hasta obtener un polvo fino.</li>
                 <li>Mezclar las galletas trituradas con la manteca derretida hasta que estén bien combinadas.</li>
                 <li>Presionar esta mezcla en el fondo de un molde desmontable para formar una base uniforme.</li>
             </ol>
-            <h3>Para el relleno</h3>
+            <h3><b>Para el relleno</b></h3>
             <ol>
                 <li>Precalentar el horno a 180°C.</li>
                 <li>En un bol batir la crema de leche a medio punto, agregar el queso mascarpone, la esencia de vainilla, el azúcar y los huevos (si son chicos utilizar 4). Integrar todo hasta que quede una mezcla homogénea.</li>
@@ -73,8 +68,19 @@
                 <li>Si prefieres una base más crujiente, puedes añadir nueces trituradas a la mezcla de galletas.</li>
                 <li>Decora con mermelada de frutas o frutas frescas antes de servir.</li>
             </ul>
+
+            <p class="pre-video"> ¿No te quedó claro? Te proporcionamos un video para que te haga mas facil seguir la receta!</p>
+
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/u1ezZicivjY?si=gE0bEheZsWzma0Zr" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
             <p class="nota">¡Disfruta de este delicioso cheesecake!</p>
         </section>
+
+        <div><a href="dulce.html">Volver a las Recetas Dulces</a></div>
+
     </main>
     <footer>
         <p>&copy; 2025 DailyCook. Todos los derechos reservados.</p>

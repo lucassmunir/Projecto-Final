@@ -4,31 +4,148 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    transition: .2s linear;
 }
 
 body {
     font-family: "MuseoModerno", sans-serif;
+     margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e4e4e4;
 }
 
 
-.navbar{
-    background-color:#7A8368;
+
+header{
+    background-color:#333;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+    margin-left: 20px;
     color: #fff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
+    }
+
+.logo-title h1{
+    font-size: 2em;
+    font-weight: 500;
+    margin: 0;
 }
 
-.navlinks {
-    font-size: 18px;
+.logo-title span {
+    margin-left: 2px;
+    color: #f0a500;
 }
 
-.navlinks ul li a:hover {
-    background-color: green;
-    border-radius: 20px;
+.logo-title img {
+    height: 2.4em;
+    width: auto;
+    margin-bottom: 4px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar i{
+    color:#ffffff;
+    width: auto;
+    font-size: 1.5em;
+    margin-top: 4px;
+}
+
+.search-bar input {
     padding: 10px;
+    border: none;
+    border-radius: 30px
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #f0a500;
+}
+
+.title-gral {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+.hero {
+    background-image: url("/img/fondo-dulces.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 570px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.section-recipes {
+    background-color: #e4e4e4;
+    padding: 50px 20px;
+    text-align: center;
 }
 
 ul{
@@ -104,10 +221,6 @@ header input:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* cambia el alto del header en la parte de postres */
-
 header.dulce {
      height: 200px;
 }
@@ -142,4 +255,37 @@ article.recipe {
     font-size: 20px;
     color: #555;
     margin-right: 3px;
+}
+
+/*Parte de las recetas*/
+.receta-titulo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.receta-titulo h1 {
+    font-size: 80px;
+    align-items: center;
+    text-align: center;
+} 
+
+.ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.receta ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
