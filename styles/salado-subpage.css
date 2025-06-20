@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MuseoModerno", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #333;
+    display: flex;
+    margin: 0;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #1e1e2f;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+    margin-left: -40px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #f39c12;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+.contenido-wrapper {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.mein {
+    flex: 1;
+    padding: 30px;
+    margin: 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* HEADER */
+.header-receta {
+    display: flex;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.receta-img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.receta-details h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: white;
+}
+
+.receta-details p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+/* PASO A PASO */
+.receta-detalles {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.receta-ingredientes,
+.receta-preparacion {
+  flex: 1;
+  min-width: 300px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.receta-ingredientes h2,
+.receta-preparacion h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+.receta-ingredientes ul,
+.receta-preparacion ol {
+  padding-left: 20px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.receta-ingredientes ul li,
+.receta-preparacion ol li {
+  border-bottom: 1px dotted black;
+  padding: 10px 0 10px 0;
+}
+
+.receta-ingredientes ul { 
+  list-style-type: none;
+}
+
+.receta-ingredientes ul span {
+    font-weight: bold;
+}
+
+/* VIDEO */
+.receta-video {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.receta-video h2 {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
+
+.receta-video p,
+.receta-video legend {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin: 0;
+}
+
+.video-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

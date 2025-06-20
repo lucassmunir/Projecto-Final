@@ -9,12 +9,12 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #e4e4e4;
     scroll-behavior: smooth;
+    background-image: url(/img/salado/27bd85265ed1e8c85b746d7870a471d5.jpg);
+    background-size: contain;
+    background-position: center;
 }
 
 header {
@@ -83,7 +83,19 @@ header {
     justify-content: center;
     text-align: center;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
+    color: black;
+    margin-top: 12px;
+}
+
+.title-gral-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    margin-top: 12px;
 }
 
 main {
@@ -112,11 +124,12 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #333;
+    padding: 15px 0 5px 0;
     border-radius: 20px;
     box-shadow: 0 4px 8px #333;
-    background: #fff;
+    /*background: #fff;*/
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
     box-sizing: border-box;
 }
 
@@ -126,7 +139,7 @@ main {
 }
 
 .stars {
-    color: #f0a500;
+    color: black;
     font-size: 28px;
     user-select: none;
 }
@@ -145,6 +158,12 @@ main {
     border-radius: 20px;
     box-shadow: 0 2px 4px #333;
     user-select: none;
+}
+
+.img-receta-subpage:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+    z-index: 50;
 }
 
 p {
@@ -183,12 +202,17 @@ footer {
 }
 
 .circle-home:hover {
-    background-color: #f0a500;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
+    body {
+        background-image: url(/img/salado/27bd85265ed1e8c85b746d7870a471d5.jpg);
+        background-size: contain;
+        background-position: center;
+    }
     header {
         display: flex;
         justify-content: center;
@@ -202,7 +226,23 @@ footer {
         justify-content: center;
         text-align: center;
         font-size: 24px;
-        font-weight: 500;
+        font-weight: 600;
+        margin-top: 25px;
+        color: black;
+    }
+    .title-gral-2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+        margin-top: 25px;
+        color: black;
+    }
+    .emoji-shake {
+        display: inline-block;
+        animation: bell-shake .6s 2;
+        transform-origin: center;
     }
     .conteiners {
         flex-direction: column;
@@ -212,7 +252,7 @@ footer {
     .conteiner-recetas {
         width: 90vw;
         min-width: 260px;
-        max-width: 350px;
+        max-width: 310px;
         margin: 0 auto;
     }
     .img-receta {
@@ -224,161 +264,15 @@ footer {
     footer {
         font-size: 12px;
     }
-    /* sub page */
-    .pasoapaso {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .img-receta-subpage {
-        display: block;
-        margin: 0 auto;
-        width: 90vw;
-        max-width: 350px;
-        height: auto;
-    }
-    .ingredientes {
-        width: 90vw;
-        min-width: 350px;
-        margin: 0 auto;
-    }
-    .ingredientes-div {
-        display: flex !important;
-        flex-direction: column;
-        gap: 16px;
-        width: 100%;
-        padding: 20px;
-    }
-    .ingredientes-div ul {
-        width: 100%;
-        margin: 0;
-    }
-    .ingredientes-div ul li {
-        text-align: start;
-    }
-    .steptostep {
-        width: 90vw;
-        max-width: 450px;
-        min-width: 300px;
-        margin: auto;
-    }
-    .conteiner-steptostep {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    .conteiner-steptostep p {
-        font-size: 14px;
-        text-align: center;
-    }
-    .video-conteiner {
-        width: 90vw;
-        height: calc(90vw * 0.56);
-        max-width: 100%;
-        margin: 20px auto;
-        display: block;
-    }
-    .rebard {
-        font-size: 16px;
-    }
 }
 
-/* sub page */
-.pasoapaso {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    margin: 20px;
-    padding: 20px;
-}
-
-.img-receta-subpage {
-    width: 100%;
-    max-width: 300px;
-    aspect-ratio: 13/10;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px #333;
-    user-select: none;
-}
-
-.ingredientes {
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px #333;
-    background-color: #fff;
-}
-
-.ingredientes h4 {
-    font-size: 24px;
-}
-
-.ingredientes-div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    margin-top: -30px;
-    gap: 20px;
-}
-
-.ingredientes-div ul {
-    list-style-type: circle;
-}
-
-.ingredientes-div ul span {
-    font-weight: 800;
-    font-size: 1rem;
-}
-
-.ingredientes-div ul li {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.steptopstep {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-}
-
-.conteiner-steptostep {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px #333;
-    background-color: #fff;
-}
-
-.video-conteiner {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    width: 560px;
-    height: 315px;
-}
-
-.rebard {
-    display: flex;
-    text-align: center;
-    margin: 0 20px;
-}
-
-legend {
-    display: flex;
-    justify-content: center;
-    font-style: italic;
+/*ANIMACIONES*/
+@keyframes bell-shake {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(-18deg); }
+    30% { transform: rotate(16deg); }
+    45% { transform: rotate(-12deg); }
+    60% { transform: rotate(8deg); }
+    75% { transform: rotate(-4deg); }
+    100% { transform: rotate(0deg); }
 }
